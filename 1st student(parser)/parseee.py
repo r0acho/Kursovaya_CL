@@ -47,7 +47,7 @@ def cmon(links):
             print('entry already exists', url)
 
 f = open('input.txt', 'w')
-client = MongoClient('mongodb+srv://admin:IV889anniker@cluster0.vgw9a.mongodb.net/test')
+client = MongoClient()
 database = client.prasim
 news = database.prasimvolgograd
 
