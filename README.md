@@ -27,6 +27,8 @@
 ![photo_2022-01-06_04-23-56](https://user-images.githubusercontent.com/84631618/148478618-bbb96123-28db-4256-ba56-3e3296f4ccb5.jpg)
 ![image](https://user-images.githubusercontent.com/84631618/148478676-90826ab4-7ac7-45ec-9255-8ed8d1d3c239.png)
 
+Модуль имеет следующий web-интерфейс, на нем представлено имя персоны или достопримечательности с контекстным синонимом
+![image](https://user-images.githubusercontent.com/84631618/148595675-f6985f7f-a2e5-4b70-b601-08f25a5c72f2.png)
 
 
 
