@@ -1,0 +1,21 @@
+encoding "utf8";
+
+TTextMinerConfig {
+
+	Dictionary = "dic.gzt";
+
+	Input = {File = "/home/vagrant/tomita-parser/build/bin/Arcticles.txt"}
+
+	Output = {File = "output2.txt"
+            Format = text}
+
+	Articles = [
+        { Name = "данные" }
+        ]
+
+	Facts = [
+        { Name = "Data" }
+        ]
+
+	PrettyOutput = "pretty.html"
+}
