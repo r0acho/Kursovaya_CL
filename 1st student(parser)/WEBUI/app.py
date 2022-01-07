@@ -4,7 +4,7 @@ import pymongo
 
 app = Flask(__name__)
 
-client = pymongo.MongoClient("mongodb+srv://admin:IV889anniker@cluster0.vgw9a.mongodb.net/test")
+client = pymongo.MongoClient("PUT YOUR CONNECTION STRING HERE")
 db1 = client.prasim
 
 res = db1.news.find().count()
