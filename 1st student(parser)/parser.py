@@ -29,7 +29,10 @@ def cmon(links):
         newsTimes = soup.find('div', {'class': 'col-md-9 main-content'}).find('div', {'class': 'date'})
         bigline = soup.find('div', {'id': 'full_text'})
         headline = soup.find('h1').text
-        newsLine = bigline.text
+        if bigline:
+            newsLine = bigline.text
+        else:
+            continue
         newsLine = re.sub("^\s+|\n|\r|\s+$", '', newsLine)  # 2 текст новости
         newsTime = newsTimes.text.strip()  # 4   дата
         news_ = {
@@ -46,12 +49,12 @@ def cmon(links):
         else:
             print('entry already exists', url)
 
-f = open('input.txt', 'w')
-client = MongoClient()
+client = MongoClient("PUT YOUR CONNECTION STRING HERE")
 database = client.prasim
-news = database.prasimvolgograd
+news = database.news
 
-for i in range(1, 10):
+for i in range(1, 836):
+    print(i)
     url = 'https://www.volgograd.ru/news/' + '?PAGEN_1=' + str(i)
     # Список ссылок полученных с сайта
     all_links = get_all_links(get_html(url))
